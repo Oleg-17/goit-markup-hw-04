@@ -6,6 +6,8 @@
   --white-text: #FFFFFF;
   --text-color: rgba(255, 255, 255, 0.6);
   --card-set: 30px;
+  --fon-icon-sum: #F5F4FA;
+  --color-icon: #AFB1B8;
 }
 
 body {
@@ -194,6 +196,12 @@ header.container, {
   display: block;
 }
 
+.icon-sum {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--fon-icon-sum);
+}
+
 .list-item {
   justify-content: space-between;
   display: flex;
@@ -255,8 +263,12 @@ header.container, {
   margin-left: 30px;
 }
 
+.staff-li {
+  outline: 2px solid tomato;
+}
+
 .staff-text {
-  padding: 30px 0px 30px 0px ;
+  padding: 30px 0px 0px 0px ;
   text-align: center;
 }
 
@@ -276,6 +288,38 @@ header.container, {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
+}
+
+.social-icons {
+  display: inline-flex ;
+  padding: 16px 32px 30px 32px;
+  
+}
+
+.icon-line:nth-child(n+2){
+  margin-left: 10px;
+}
+
+.animals-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+ 
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.animals-link:hover,
+.animals-link:focus{
+  
+  background-color: var(--blu-text);
+  color: var(--white-text);
+  border-radius: 50%;
+}
+
+.animals-icon {
+  fill: currentColor;
 }
 
 .footer {
