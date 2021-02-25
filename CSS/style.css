@@ -141,7 +141,8 @@ header.container, {
 .lin {
   margin-top: 32px 16px;
   Width: px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 
   color: var(--grey-text);
   font-style: normal;
@@ -306,6 +307,7 @@ header.container, {
   height: 44px;
   justify-content: center;
   align-items: center;
+  color: var(--color-icon) ;
 }
 
 .animals-link:hover,
@@ -318,6 +320,19 @@ header.container, {
 
 .animals-icon {
   fill: currentColor;
+}
+
+.icon-clients {
+  border: 1px solid tomato;
+}
+
+.client-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+   
 }
 
 .footer {
