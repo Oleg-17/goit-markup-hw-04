@@ -23,6 +23,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
  /* outline: 2px solid tomato;*/
+  outline: 1px solid tomato;
 }
 
 ul {
@@ -283,6 +284,8 @@ header.container, {
   line-height: 1.19;
 }
 
+
+
 .profession {
   color: var(--grey-text);
   font-style: normal;
@@ -322,8 +325,28 @@ header.container, {
   fill: currentColor;
 }
 
+
+
+.costomers {
+  padding-top: 95px;
+}
+
 .icon-clients {
-  border: 1px solid tomato;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+ 
+}
+
+.icon-clients * { 
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+
+.icon-clients :nth-child(n+2) {
+  margin-left: 30px
 }
 
 .client-link {
@@ -332,10 +355,22 @@ header.container, {
   height: 90px;
   justify-content: center;
   align-items: center;
-   
+  color: var(--color-icon) ;
+  border: 1px solid var(--color-icon);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--blu-text);
+  color: var(--blu-text); 
+}
+
+.client-icon {
+  fill: currentColor;
 }
 
 .footer {
+  margin-top: 100px;
   padding-bottom: 60px;
   background-color: #2F303A;
 }
@@ -377,6 +412,32 @@ header.container, {
   line-height: 1.7;
   text-decoration: none;
 }
+
+.adres-join {
+  display: flex;
+}
+
+.join {
+margin-left: 70px;
+padding-bottom: px;
+}
+
+.icon-futer {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url("../images/icon.svg/instagram22.svg");
+  border-radius: 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-futer:hover {
+  background-color: var(--blu-text);
+}
+
 
 .cards {
   padding-top: 94px;
